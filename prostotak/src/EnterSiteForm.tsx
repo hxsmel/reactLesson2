@@ -12,7 +12,8 @@ function Form({ formType }: { formType: "login" | "register" }) {
 export default function EnterFile() {
     return (
         <section>
-            <Form formType="register" />
+            <Form formType="login" />
         </section>
     );
 }
+
