@@ -1,0 +1,89 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: blanchedalmond;
+  margin: 0;
+  padding: 0;
+}
+
+.loginForm {
+  margin-top: 500px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: darkseagreen;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginFormTitle {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.usernameInput {
+  display: flex;
+  justify-content: center;
+  margin: 0 400px 8px 400px;
+  background-color: lightblue;
+}
+
+.passwordInput {
+  display: flex;
+  justify-content: center;
+  margin: 0 400px 8px 400px;
+  background-color: lightblue;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  margin: 0 400px 8px 400px;
+  background-color: mediumpurple;
+}
+
+.registerForm {
+  margin-top: 500px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: darkseagreen;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.registerFormTitle {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.registerEmailInput {
+  display: flex;
+  justify-content: center;
+  margin: 0 400px 8px 400px;
+  background-color: lightblue;
+}
+
+.registerUsernameInput {
+  display: flex;
+  justify-content: center;
+  margin: 0 400px 8px 400px;
+  background-color: lightblue;
+}
+
+.registerPasswordInput {
+  display: flex;
+  justify-content: center;
+  margin: 0 400px 8px 400px;
+  background-color: lightblue;
+}
+
+.registerButton {
+  display: flex;
+  justify-content: center;
+  margin: 0 400px 8px 400px;
+  background-color: mediumpurple;
+}
+
