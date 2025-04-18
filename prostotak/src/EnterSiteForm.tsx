@@ -1,19 +1,35 @@
+import { useState } from "react";
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
 
-function Form({ formType }: { formType: "login" | "register" }) {
-    return (
-        <>
-            {formType === "login" ? <LoginForm /> : <RegisterForm />}
-        </>
-    );
-}
+export default function EnterSiteForm() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [formType, setFormType] = useState<"login" | "register">("login");
 
-export default function EnterFile() {
+    const openModal = (type: "login" | "register") => {
+        setFormType(type);
+        setIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsOpen(false);
+    };
+
     return (
-        <section>
-            <Form formType="login" />
+        <section className="enterButtons">
+            <button onClick={() => openModal("login")}>Войти</button>
+            <button onClick={() => openModal("register")}>Регистрация</button>
+
+            {isOpen && (
+                <div className="modalOverlay">
+                    <div className="modalContent">
+                        <button onClick={closeModal} className="closeButton">X</button>
+                        {formType === "login" ? <LoginForm /> : <RegisterForm />}
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
 
+//проверяем
